@@ -28,9 +28,15 @@ caesar = {
 90: "y",
 }
 
-$("#inputText").keydown(function(e)
+$("#inputText").keydown(function(e) {
+
+});
 
 $("input[type = 'radio']").click(function(e) {
   $("input.checked").prop('checked', true);
   $(this).prop('checked', false);
 });
+
+if ($("input:checked").val() == "echo") {
+  
+}
