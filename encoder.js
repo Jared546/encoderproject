@@ -37,6 +37,14 @@ $("input[type = 'radio']").click(function(e) {
   $(this).prop('checked', false);
 });
 
-if ($("input:checked").val() == "echo") {
-  
+if($( "input :checked").val() == "echo") {
+  $( "textArea").append(String.fromCharCode(event.which));
+}
+
+if($( "input :checked").val() == "Heiroglyphics") {
+  $( "textArea").append(String.fromCharCode(event.which));
+}
+
+if($( "input :checked").val() == "Caesar cipher") {
+  $( "textArea").append(String.fromCharCode(event.which));
 }
